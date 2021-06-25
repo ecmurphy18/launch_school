@@ -4,7 +4,11 @@ def triangle(num)
     str << " "
   }
   puts str
-
+  while num > 0 do
+    str[num] = "*"
+    puts str
+    num = num-1
+  end
 end
 
 triangle(5)
